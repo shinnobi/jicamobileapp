@@ -1,0 +1,14 @@
+com/jicamobileapp/MainApplication.java
+ com.jicamobileapp.MainApplication
+ com.jicamobileapp.MainApplication$1
+com/jicamobileapp/BuildConfig.java
+ com.jicamobileapp.BuildConfig
+com/jicamobileapp/ReactNativeFlipper.java
+ com.jicamobileapp.ReactNativeFlipper
+ com.jicamobileapp.ReactNativeFlipper$1
+ com.jicamobileapp.ReactNativeFlipper$2
+ com.jicamobileapp.ReactNativeFlipper$2$1
+com/jicamobileapp/MainActivity.java
+ com.jicamobileapp.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
