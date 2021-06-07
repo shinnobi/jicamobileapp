@@ -1,14 +1,14 @@
-com/jicamobileapp/MainApplication.java
- com.jicamobileapp.MainApplication
- com.jicamobileapp.MainApplication$1
-com/jicamobileapp/BuildConfig.java
- com.jicamobileapp.BuildConfig
-com/jicamobileapp/ReactNativeFlipper.java
- com.jicamobileapp.ReactNativeFlipper
- com.jicamobileapp.ReactNativeFlipper$1
- com.jicamobileapp.ReactNativeFlipper$2
- com.jicamobileapp.ReactNativeFlipper$2$1
-com/jicamobileapp/MainActivity.java
- com.jicamobileapp.MainActivity
+vn/weathervietnam/jicamobileapp/MainApplication.java
+ vn.weathervietnam.jicamobileapp.MainApplication
+ vn.weathervietnam.jicamobileapp.MainApplication$1
+vn/weathervietnam/jicamobileapp/MainActivity.java
+ vn.weathervietnam.jicamobileapp.MainActivity
+vn/weathervietnam/jicamobileapp/ReactNativeFlipper.java
+ vn.weathervietnam.jicamobileapp.ReactNativeFlipper
+ vn.weathervietnam.jicamobileapp.ReactNativeFlipper$1
+ vn.weathervietnam.jicamobileapp.ReactNativeFlipper$2
+ vn.weathervietnam.jicamobileapp.ReactNativeFlipper$2$1
+vn/weathervietnam/jicamobileapp/BuildConfig.java
+ vn.weathervietnam.jicamobileapp.BuildConfig
 com/facebook/react/PackageList.java
  com.facebook.react.PackageList

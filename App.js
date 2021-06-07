@@ -55,6 +55,7 @@ class App extends React.Component {
     render() {
         const persistor = persistStore(store);
         return (
+            
             <Provider store={store}>
                 <PersistGate persistor={persistor}>
                     <Router/>

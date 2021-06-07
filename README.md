@@ -8,6 +8,10 @@ maven {
         }
 npm i --save-dev reactotron-react-native
 npm install react-native-geolocation-service
+# firebase config
+https://www.npmjs.com/package/react-native-rename
+npx react-native-rename <newName> -b <bundleIdentifier>
+
 ## Features
 
 # Build Android:

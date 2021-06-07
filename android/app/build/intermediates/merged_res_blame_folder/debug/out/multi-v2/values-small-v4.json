@@ -4,7 +4,7 @@
             "outputFile": "D:\\project\\react-native\\jicamobileapp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\manh.ngovan\\.gradle\\caches\\transforms-2\\files-2.1\\6b335435edd2b3bbcd97cbb881d263ba\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\manh.ngovan\\.gradle\\caches\\transforms-2\\files-2.1\\121c1b7561d49d1b372ceeda497bdd1c\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

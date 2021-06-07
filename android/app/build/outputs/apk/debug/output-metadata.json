@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.jicamobileapp",
+  "applicationId": "vn.weathervietnam.jicamobileapp",
   "variantName": "processDebugResources",
   "elements": [
     {

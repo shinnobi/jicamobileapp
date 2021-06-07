@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.jicamobileapp">
+  package="vn.weathervietnam.jicamobileapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

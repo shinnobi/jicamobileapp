@@ -53,6 +53,7 @@
     "babel-jest": "^27.0.2",
     "eslint": "^7.27.0",
     "jest": "^27.0.4",
+    "jetifier": "^2.0.0",
     "metro-react-native-babel-preset": "^0.66.0",
     "react-test-renderer": "17.0.1",
     "reactotron-react-native": "^5.0.0",

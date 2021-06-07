@@ -1,10 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.crashlytics.sdk.android:answers:1.4.7@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/22f4ca01bbf64203ecfaf8e989ba9c71/jetified-answers-1.4.7/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88f694529341967509bbca3a62a4c7d0/jetified-answers-1.4.7/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88f694529341967509bbca3a62a4c7d0/jetified-answers-1.4.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/88f694529341967509bbca3a62a4c7d0/jetified-answers-1.4.7/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fdd36c32fe04f84b9dd5d9e2f75c1ed7/jetified-answers-1.4.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fdd36c32fe04f84b9dd5d9e2f75c1ed7/jetified-answers-1.4.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fdd36c32fe04f84b9dd5d9e2f75c1ed7/jetified-answers-1.4.7/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
