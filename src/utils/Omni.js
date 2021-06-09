@@ -1,7 +1,7 @@
-import { Alert } from 'react-native';
+import {Alert} from 'react-native';
 import _moment from 'moment';
 //import 'moment/location/vi';
-import _EventEmitter from 'react-native/Libraries/EventEmitter/NativeEventEmitter';
+import _EventEmitter from 'react-native/Libraries/vendor/emitter/EventEmitter';
 import _Timer from 'react-timer-mixin';
 import _Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import _IconIO from 'react-native-vector-icons/Ionicons';
@@ -11,7 +11,7 @@ import _Device from './Device';
 import _Constants from './Constants';
 import _Languages from './Languages';
 import _Images from './Images';
-import { log as _log, warn as _warn, error as _error } from './log';
+import {log as _log, warn as _warn, error as _error} from './log';
 
 _moment.locale('vi');
 
@@ -36,21 +36,22 @@ export const error = _error;
  * @param duration Display duration
  */
 const _toast = (msg, duration = 3000) =>
-    EventEmitter.emit(_Constants.EmitCode.Toast, msg, duration);
+  EventEmitter.emit(_Constants.EmitCode.Toast, msg, duration);
 
 export const toast = _toast;
 
 const _showAlert = (title, message, onOk, onCancel) => {
-    Alert.alert(title, message, [
-        {
-            text: Languages.Cancel,
-            onPress: onCancel || undefined,
-        },
-        {
-            text: Languages.OK,
-            onPress: onOk,
-        }
-    ]);
+  Alert.alert(title, message, [
+    {
+      text: Languages.Cancel,
+      onPress: onCancel || undefined,
+    },
+    {
+      text: Languages.OK,
+      onPress: onOk,
+    },
+    ,
+  ]);
 };
 
 export const showAlert = _showAlert;
