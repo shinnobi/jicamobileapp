@@ -1,5 +1,5 @@
 {
-    "api": {
-      "url": "https://m.api.weathervietnam.vn/api"
-    }
+  "api": {
+    "url": "http://api.jica.weathervietnam.vn:6060/api"
+  }
 }

@@ -1,0 +1,67 @@
+/** @format */
+
+import React, { Component } from 'react';
+import { View, Dimensions } from 'react-native';
+import { WebView } from 'react-native-webview';
+
+import { Constants, log } from '../../utils/Omni';
+import { colorSet } from '../../AppStyles';
+
+const { width, scale } = Dimensions.get('window');
+
+export default class Index extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      webViewHeight: 600,
+    };
+  }
+
+  updateHeight = event => {
+    this.setState({ webViewHeight: Number.parseInt(event.jsEvaluationValue, 10) });
+  };
+
+  render() {
+    const getHTML = () => {
+      const { html, fontSize } = this.props;
+
+      return `<html><head><style type="text/css">
+				      body {
+				        margin: 0 8 8;
+				        padding: 0;
+				        font: ${fontSize}px arial, sans-serif;
+                background: white;
+                color: ${colorSet.Text}
+				        width: ${(width - 50) * scale}
+				      }
+				      p {
+				        width: ${(width - 50) * scale}
+				      }
+				      h1, h2, h3 {
+				        font: ${fontSize + 2}px arial, sans-serif !important;
+				      }
+				      img {
+				        height: auto;
+				        width: ${(width - 50) * scale}
+			        }
+				</style></head><body>${html}</body>`;
+    };
+
+    return (
+      <View style={{ backgroundColor: '#fff' }}>
+        <WebView
+          originWhitelist={['*']}
+          source={{ html: getHTML() }}
+          startInLoadingState
+          injectedJavaScript="document.body.scrollHeight;"
+          onNavigationStateChange={this.updateHeight}
+          style={{
+            flex: 0,
+            width: (width - 50) * scale,
+            height: 900,
+          }}
+        />
+      </View>
+    );
+  }
+}

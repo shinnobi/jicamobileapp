@@ -1,0 +1,1 @@
+npx react-native-rename jicamobileapp -b vn.weathervietnam.jicamobileapp

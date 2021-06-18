@@ -12,6 +12,8 @@ target 'jicamobileapp' do
     :hermes_enabled => false
   )
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'jicamobileappTests' do
     inherit! :complete
     # Pods for testing

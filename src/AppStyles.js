@@ -1,4 +1,4 @@
-import {Platform} from 'react-native';
+import { Platform } from 'react-native';
 
 // import Constants from './utils/Constants';
 import Device from './utils/Device';
@@ -69,9 +69,7 @@ const _fontSizeSet = {
 if (Device.isTablet) {
   Object.keys(_fontSizeSet).forEach(sizeKey => {
     _fontSizeSet[sizeKey] =
-      _fontSizeSet[sizeKey] <= 18
-        ? _fontSizeSet[sizeKey] + 2
-        : _fontSizeSet[sizeKey] + 4;
+      _fontSizeSet[sizeKey] <= 18 ? _fontSizeSet[sizeKey] + 2 : _fontSizeSet[sizeKey] + 4;
   });
 }
 

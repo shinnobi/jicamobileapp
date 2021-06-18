@@ -1,6 +1,7 @@
-// import { RectButton } from 'react-native-gesture-handler';
+/** @format */
+// import { Platform } from 'react-native';
 import Reactotron from 'reactotron-react-native';
-import {applyMiddleware, compose, createStore} from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from './redux';
 import './utils/ReactotronConfig';
@@ -18,7 +19,10 @@ const configureStore = () => {
     store = createStore(
       reducers,
       {},
-      compose(applyMiddleware(...middleware), Reactotron.createEnhancer()),
+      compose(
+        applyMiddleware(...middleware),
+        Reactotron.createEnhancer()
+      )
     );
   } else {
     store = compose(applyMiddleware(...middleware))(createStore)(reducers);

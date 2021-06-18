@@ -1,5 +1,5 @@
 const Images = {
-    '0000': require('../images/background/summerClear2.jpg'),
+  '0000': require('../images/background/summerClear2.jpg'),
   '0001': require('../images/background/summerClear2.jpg'), // using overlay for night time
   '0010': require('../images/background/clearSunny.jpg'),
   '0011': require('../images/background/summerClear2.jpg'), // using overlay for night time

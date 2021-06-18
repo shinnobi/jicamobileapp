@@ -13,24 +13,12 @@ import java.util.ArrayList;
 
 // @react-native-community/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
+// @react-native-community/masked-view
+import org.reactnative.maskedview.RNCMaskedViewPackage;
 // @react-native-community/netinfo
 import com.reactnativecommunity.netinfo.NetInfoPackage;
-// react-native-appstore-version-checker
-import com.masteratul.RNAppstoreVersionCheckerPackage;
-// react-native-background-fetch
-import com.transistorsoft.rnbackgroundfetch.RNBackgroundFetchPackage;
-// react-native-background-timer
-import com.ocetnik.timer.BackgroundTimerPackage;
-// react-native-dark-mode
-import com.codemotionapps.reactnativedarkmode.DarkModePackage;
-// react-native-events
-import com.lufinkey.react.eventemitter.RNEventEmitterPackage;
-// react-native-fast-image
-import com.dylanvann.fastimage.FastImageViewPackage;
-// react-native-firebase
-import io.invertase.firebase.RNFirebasePackage;
-// react-native-geolocation-service
-import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
+// react-native-flipper
+import com.facebook.flipper.reactnative.FlipperPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-reanimated
@@ -41,8 +29,6 @@ import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.rnscreens.RNScreensPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
-// react-native-version-number
-import com.apsl.versionnumber.RNVersionNumberPackage;
 
 public class PackageList {
   private Application application;
@@ -89,21 +75,14 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
+      new RNCMaskedViewPackage(),
       new NetInfoPackage(),
-      new RNAppstoreVersionCheckerPackage(),
-      new RNBackgroundFetchPackage(),
-      new BackgroundTimerPackage(),
-      new DarkModePackage(),
-      new RNEventEmitterPackage(),
-      new FastImageViewPackage(),
-      new RNFirebasePackage(),
-      new RNFusedLocationPackage(),
+      new FlipperPackage(),
       new RNGestureHandlerPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
-      new VectorIconsPackage(),
-      new RNVersionNumberPackage()
+      new VectorIconsPackage()
     ));
   }
 }

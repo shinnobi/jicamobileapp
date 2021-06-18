@@ -1,7 +1,13 @@
-import {Alert} from 'react-native';
+/**
+ * Created by KhanhNQ on 17/02/2017.
+ *
+ * @format
+ */
+import { Alert } from 'react-native';
 import _moment from 'moment';
-//import 'moment/location/vi';
-import _EventEmitter from 'react-native/Libraries/vendor/emitter/EventEmitter';
+import 'moment/locale/vi';
+import { DeviceEventEmitter } from 'react-native';
+//import _EventEmitter from 'EventEmitter';
 import _Timer from 'react-timer-mixin';
 import _Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import _IconIO from 'react-native-vector-icons/Ionicons';
@@ -11,12 +17,13 @@ import _Device from './Device';
 import _Constants from './Constants';
 import _Languages from './Languages';
 import _Images from './Images';
-import {log as _log, warn as _warn, error as _error} from './log';
+import { log as _log, warn as _warn, error as _error } from './log';
 
 _moment.locale('vi');
 
 export const moment = _moment;
-export const EventEmitter = new _EventEmitter();
+//export const EventEmitter = new _EventEmitter();
+export const EventEmitter = DeviceEventEmitter;
 export const Timer = _Timer;
 
 export const Icon = _Icon;
@@ -31,8 +38,8 @@ export const warn = _warn;
 export const error = _error;
 
 /**
- *  Display the message toast-like (work both with Android and iOS)
- *  @param msg Message to display
+ * Display the message toast-like (work both with Android and iOS)
+ * @param msg Message to display
  * @param duration Display duration
  */
 const _toast = (msg, duration = 3000) =>
@@ -40,17 +47,13 @@ const _toast = (msg, duration = 3000) =>
 
 export const toast = _toast;
 
-const _showAlert = (title, message, onOk, onCancel) => {
+const _showAlert = (title, message, onOK, onCancel) => {
   Alert.alert(title, message, [
     {
       text: Languages.Cancel,
       onPress: onCancel || undefined,
     },
-    {
-      text: Languages.OK,
-      onPress: onOk,
-    },
-    ,
+    { text: Languages.OK, onPress: onOK },
   ]);
 };
 
